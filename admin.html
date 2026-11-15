@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ZARORAT - Second Panel | Full Heavy Server</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#020a08;color:#eafff5;font-family:'Plus Jakarta Sans',system-ui;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(900px 500px at 15% -10%,rgba(0,230,118,.28),transparent 60%),radial-gradient(800px 500px at 90% 0%,rgba(45,212,255,.22),transparent 60%),radial-gradient(700px 400px at 50% 110%,rgba(0,230,118,.15),transparent 60%)}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);opacity:.45;z-index:-1}.orb1{width:380px;height:380px;background:#00e676;top:-120px;left:-80px}.orb2{width:340px;height:340px;background:#2dd4ff;top:20%;right:-120px}.orb3{width:300px;height:300px;background:#c8ff3d;bottom:-100px;left:30%}
+.wrap{max-width:520px;margin:0 auto;padding:14px 14px 110px}.wrap-wide{max-width:1280px;margin:0 auto;padding:14px 14px 40px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.flex{display:flex;gap:10px;align-items:center}.mt{margin-top:16px}.muted{color:#9db5ab;font-size:13px;line-height:1.5}.green{color:#00e676}.label{display:block;font-size:11px;letter-spacing:.12em;font-weight:800;color:#9db5ab;text-transform:uppercase;margin:14px 0 6px}
+.logo{display:flex;gap:12px;align-items:center}.z{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#00e676,#00c2a8,#2dd4ff);color:#03110a;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;box-shadow:0 10px 22px rgba(0,230,118,.65),inset 0 2px 0 rgba(255,255,255,.7);animation:heavyGlow 2.2s infinite}
+@keyframes heavyGlow{0%,100%{box-shadow:0 12px 28px rgba(0,230,118,.4)}50%{box-shadow:0 0 55px rgba(0,230,118,.85),0 16px 35px rgba(0,230,118,.5)}}
+.live{width:11px;height:11px;border-radius:50%;background:#00e676;display:inline-block;box-shadow:0 0 20px rgba(0,230,118,.9);animation:livePulse 1s infinite}
+@keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(0,230,118,.7)}70%{box-shadow:0 0 0 13px rgba(0,230,118,0)}100%{box-shadow:0 0 0 0 rgba(0,230,118,0)}}
+.shimmer{background:linear-gradient(90deg,#fff,#00e676,#2dd4ff,#fff);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmerMove 2s linear infinite}
+@keyframes shimmerMove{to{background-position:200% center}}
+.glass{background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.02));border:2px solid rgba(0,230,118,.35);border-radius:30px;padding:28px;box-shadow:0 42px 90px rgba(0,0,0,.7),0 0 80px rgba(0,230,118,.18)}
+.card{background:linear-gradient(165deg,#12281f,#08120e 70%);border:2px solid #234a38;border-radius:28px;padding:24px;box-shadow:0 34px 80px rgba(0,0,0,.7),0 0 40px rgba(0,230,118,.08),inset 0 1px 0 rgba(255,255,255,.16);position:relative;overflow:hidden;margin-top:14px}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#00e676,#2dd4ff,transparent)}
+.card:hover{transform:translateY(-5px) scale(1.01);border-color:#00e676;box-shadow:0 48px 95px rgba(0,230,118,.35),0 34px 80px rgba(0,0,0,.7)}
+.mini{background:linear-gradient(160deg,#142e23,#0a1712);border:2px solid #234a38;border-radius:24px;padding:22px;box-shadow:0 26px 55px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.14)}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat>div{background:linear-gradient(160deg,#142e23,#0a1712);border:2px solid #234a38;border-radius:26px;padding:24px;box-shadow:0 26px 55px rgba(0,0,0,.6)}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px}
+.btn{width:100%;background:linear-gradient(100deg,#00e676,#00c2a8,#2dd4ff);color:#03110a;border:none;border-radius:22px;padding:20px;font-size:18px;font-weight:800;cursor:pointer;box-shadow:0 26px 55px rgba(0,230,118,.6),inset 0 1px 0 rgba(255,255,255,.7);position:relative;overflow:hidden}
+.btn:after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 2.8s infinite}
+@keyframes shine{0%{left:-80%}60%,100%{left:130%}}
+.btn:active{transform:scale(.96)}
+.btn2{background:#122a1f;color:#eafff5;border:2px solid #234a38;border-radius:18px;padding:14px 17px;font-weight:700;cursor:pointer;box-shadow:0 14px 30px rgba(0,0,0,.5)}
+.btn2:hover{border-color:#00e676;background:#16382a}
+.input{width:100%;background:#07130f;border:2px solid #234a38;border-radius:17px;padding:17px;color:#fff;font-size:15px}
+.input:focus{border-color:#00e676;box-shadow:0 0 0 3px rgba(0,230,118,.2);outline:none}
+select.input option{background:#07130f}
+.chip{background:#122a1f;border:1.5px solid #234a38;padding:9px 14px;border-radius:999px;font-size:12px;font-weight:700}
+.pill{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:800}.pill.ok{background:#0a2a1a;color:#00e676}.pill.warn{background:#2a220a;color:#ffd88a}.pill.bad{background:#2a0a0f;color:#ff8a94}
+.picon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#00e676,#00c2a8,#2dd4ff);color:#03110a;font-size:13px;font-weight:800;box-shadow:0 6px 14px rgba(0,230,118,.45),inset 0 1px 0 rgba(255,255,255,.65);flex-shrink:0}
+.picon.blue{background:linear-gradient(135deg,#2dd4ff,#00a8ff)}.picon.gold{background:linear-gradient(135deg,#ffd88a,#ffb300)}.picon.pink{background:linear-gradient(135deg,#ff8a94,#ff5d6c)}.picon.dark{background:linear-gradient(135deg,#03110a,#0a2a1f);color:#00e676;border:1px solid #00e676}
+.navicon{display:flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:8px;background:#122a1f;border:1px solid #234a38;font-size:13px;font-weight:800}
+.nav{position:fixed;bottom:0;left:0;right:0;background:rgba(4,12,9,.96);border-top:2px solid #234a38;box-shadow:0 -28px 65px rgba(0,0,0,.8);z-index:50}
+.navin{max-width:520px;margin:0 auto;display:flex;justify-content:space-around;padding:10px 8px calc(10px + env(safe-area-inset-bottom))}
+.nav button{background:none;border:none;color:#9db5ab;font-size:11px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;border-radius:16px;padding:8px 6px}
+.nav button.on{color:#03110a;background:linear-gradient(100deg,#00e676,#00c2a8);box-shadow:0 12px 28px rgba(0,230,118,.45)}
+.nav button.on .navicon{background:linear-gradient(135deg,#00e676,#00c2a8);color:#03110a}
+.sticky{position:sticky;top:0;z-index:40;background:rgba(4,12,9,.94);border:2px solid #234a38;border-radius:0 0 26px 26px;box-shadow:0 28px 65px rgba(0,0,0,.8);padding:16px}
+.tabs{display:flex;gap:6px;background:#07130f;border-radius:19px;padding:6px;border:2px solid #234a38}.tabs button{flex:1;background:none;border:none;color:#9db5ab;border-radius:15px;padding:14px;font-weight:700;cursor:pointer}.tabs button.on{background:linear-gradient(100deg,#00e676,#00c2a8);color:#03110a}
+.easypaisa{background:linear-gradient(135deg,#00e676,#00b37a 55%,#00c2a8);border-radius:34px;padding:28px;box-shadow:0 38px 75px rgba(0,230,118,.5),inset 0 2px 0 rgba(255,255,255,.55);color:#03110a;margin-top:14px}
+.bar{height:11px;border-radius:999px;background:#0a1f18;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#00e676,#2dd4ff)}
+.premium-badge{display:inline-flex;gap:6px;background:linear-gradient(100deg,#00e676,#2dd4ff);color:#03110a;padding:11px 18px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.1em;box-shadow:0 16px 32px rgba(0,230,118,.5)}
+.toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%);background:#03110a;border:2px solid #00e676;border-radius:16px;padding:14px 18px;font-weight:700;z-index:300;box-shadow:0 20px 45px rgba(0,230,118,.35)}
+.serverbar{display:flex;gap:8px;align-items:center;background:linear-gradient(100deg,#03110a,#0a2a1f);border:2px solid #00e676;border-radius:999px;padding:10px 16px;font-size:12px;font-weight:800;letter-spacing:.08em;box-shadow:0 14px 30px rgba(0,230,118,.3)}
+@keyframes floatIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.anim,.anim2,.anim3{animation:floatIn .5s ease both}.anim2{animation-delay:.08s}.anim3{animation-delay:.16s}
+@keyframes confetti{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+</style></head><body>
+<div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div><div id="app"></div>
+<script>
+
+// ===== VERCEL SERVER.JS - PRIMARY (Firebase backup) =====
+let _vercelOn = false;
+async function vercelPull(){
+  try{
+    let r = await fetch('/api/db? t='+Date.now(), {cache:'no-store'});
+    if(!r.ok) return false;
+    let d = await r.json();
+    if(d && typeof d==='object'){ _vercelOn=true; return applyRemoteData(d,'vercel'); }
+  }catch(e){}
+  return false;
+}
+function startVercelStream(){
+  try{
+    let es = new EventSource('/api/events');
+    es.onmessage = (e)=>{ try{ let d=JSON.parse(e.data); if(d&&d.users) { _vercelOn=true; applyRemoteData(d,'vercel-stream'); } }catch(err){} };
+    es.onerror = ()=>{ try{es.close();}catch(e){} setTimeout(startVercelStream, 2000); };
+  }catch(e){}
+}
+async function vercelPush(){
+  try{ let r = await fetch('/api/db',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(DB),keepalive:true,cache:'no-store'}); if(r.ok){ _vercelOn=true; return true; } }catch(e){}
+  return false;
+}
+
+const DB_URL="https://zarora-f7526-default-rtdb.firebaseio.com/zarorat.json";
+let DB=null; const DB_KEY="zarorat_db_v3";
+const EMPTY_DB=()=>({users:[],services:[],orders:[],deposits:[],tickets:[],notifications:[],coupons:[],announcements:[],categories:[],activity:[],settings:{panelName:"ZARORAT",minDeposit:50,referralBonus:5,supportMessage:"Ask the support team anything. Replies appear inside your ticket."},favorites:[],transactions:[]});
+function loadDB(){ try{ let s=localStorage.getItem(DB_KEY); DB=s?JSON.parse(s):EMPTY_DB(); }catch(e){ DB=EMPTY_DB(); } for(let k in EMPTY_DB()) if(!DB[k]) DB[k]=EMPTY_DB()[k]; return DB; }
+let _lastJSON="", _lastInteraction=0, _pushing=false, _serverStatus="CONNECTING", _syncCount=0, _lastSyncTime=0;
+// ===== FULL HEAVY SERVER - QUEUE + RETRY + MULTI-CHANNEL =====
+let _pushQueue=[], _pushTimer=null, _isOnline=navigator.onLine!==false;
+window.addEventListener('online',()=>{_isOnline=true; flushPushQueue();});
+window.addEventListener('offline',()=>{_isOnline=false;});
+function updateServerBar(){ let el=document.getElementById("serverBar"); if(!el) return; let dot=_serverStatus==="CONNECTED"?"#00e676":_serverStatus==="SYNCING"?"#ffd88a":"#ff5d6c"; el.innerHTML=`<span class="live" style="background:${dot}"></span> FULL HEAVY SERVER • ${_serverStatus} • SYNC ${_syncCount} • ${_isOnline?"ONLINE":"OFFLINE - QUEUED"}`; }
+function setServerStatus(s){ _serverStatus=s; updateServerBar(); }
+function flushPushQueue(){ if(_pushTimer) return; _pushTimer=setTimeout(()=>{ _pushTimer=null; if(!_pushQueue.length) return; let latest=_pushQueue[_pushQueue.length-1]; _pushQueue=[]; doPush(latest); },120); }
+function doPush(j){ _pushing=true; setServerStatus("SYNCING"); let c=new AbortController(); setTimeout(()=>{ try{c.abort();}catch(e){} _pushing=false; },4000); fetch(DB_URL,{method:"PUT",headers:{"Content-Type":"application/json"},body:j,signal:c.signal,keepalive:true,cache:"no-store"}).then(()=>{ _pushing=false; _lastJSON=j; _syncCount++; _lastSyncTime=Date.now(); setServerStatus("CONNECTED"); }).catch(()=>{ _pushing=false; _pushQueue.push(j); setServerStatus("RETRYING"); setTimeout(flushPushQueue,800); }); }
+function pushToFirebase(force){ let j=JSON.stringify(DB); if(!force&&j===_lastJSON) return; if(!_isOnline){ _pushQueue.push(j); setServerStatus("OFFLINE - QUEUED"); return; } if(_pushing&&!force){ _pushQueue.push(j); flushPushQueue(); return; } doPush(j); }
+function saveDB(){ try{ localStorage.setItem(DB_KEY,JSON.stringify(DB)); }catch(e){} try{ let bc=new BroadcastChannel("zarorat-live"); bc.postMessage({db:DB,t:Date.now()}); bc.close(); }catch(e){} try{ localStorage.setItem("zarorat_live_ping",String(Date.now())); }catch(e){} pushMaximumFast(); }
+function applyRemoteData(d,src){ if(!d||typeof d!=="object") return false; if(!(d.users||d.services||d.orders)) return false; let nj=JSON.stringify(d); if(nj===_lastJSON) return false; DB=d; for(let k in EMPTY_DB()) if(!DB[k]) DB[k]=EMPTY_DB()[k]; _lastJSON=nj; _syncCount++; _lastSyncTime=Date.now(); setServerStatus("CONNECTED"); try{localStorage.setItem(DB_KEY,nj);}catch(e){} onRemoteChange&&onRemoteChange(); return true; }
+async function fastPull(){ try{ if(await vercelPull()) return; }catch(e){}  setServerStatus("SYNCING"); fetch(DB_URL+"?t="+Date.now(),{cache:"no-store"}).then(r=>{ if(!r.ok) return null; return r.json(); }).then(d=>{ if(d) applyRemoteData(d,"pull"); else if(d===null) pushToFirebase(true); else setServerStatus("CONNECTED"); }).catch(()=>{ setServerStatus("RETRYING"); }); }
+let _ws=null,_wsId=1,_wsRetry=0,_wsPing=null,_es=null,_ws2=null;
+function startMaximumFastServer(){
+  try{ if(_ws && (_ws.readyState===0||_ws.readyState===1)) return; }catch(e){}
+  try{ if(_ws) _ws.close(); }catch(e){}
+  try{
+    _ws=new WebSocket("wss://zarora-f7526-default-rtdb.firebaseio.com/.ws?v=5&ns=zarora-f7526-default-rtdb");
+    _ws.onopen=()=>{ _wsRetry=0; setServerStatus("CONNECTED"); try{ _ws.send(JSON.stringify({t:"d",d:{r:_wsId++,a:"l",b:{p:"/zarorat",h:""}}})); }catch(e){} clearInterval(_wsPing); _wsPing=setInterval(()=>{ try{ if(_ws&&_ws.readyState===1) _ws.send(JSON.stringify({t:"c",d:{t:"p",d:{}}})); }catch(e){} },18000); fastPull(); };
+    _ws.onmessage=(ev)=>{ try{ let msg=JSON.parse(ev.data); if(msg.t==="c") return; let d=msg.d||{}; if(d.b&&d.b.d!==undefined&&d.b.d!==null){ let payload=d.b.d; if(payload&&typeof payload==="object"){ if(payload.users||payload.services||payload.orders){ applyRemoteData(payload,"ws"); } else if(d.b.p&&String(d.b.p).indexOf("/zarorat/")===0){ let field=String(d.b.p).replace("/zarorat/","").split("/")[0]; if(field){ let m=JSON.parse(JSON.stringify(DB||EMPTY_DB())); m[field]=payload; applyRemoteData(m,"ws-field"); } } } return; } if((d.a==="d"||d.a==="m")&&d.b&&d.b.d!==undefined&&d.b.d!==null){ let p=String(d.b.p||"/zarorat"); let val=d.b.d; if(p==="/zarorat"){ applyRemoteData(val,"ws"); } else if(p.indexOf("/zarorat/")===0){ let field=p.replace("/zarorat/","").split("/")[0]; if(field){ let m=JSON.parse(JSON.stringify(DB||EMPTY_DB())); m[field]=val; applyRemoteData(m,"ws-field"); } } } }catch(e){} };
+    _ws.onclose=()=>{ setServerStatus("RECONNECTING"); clearInterval(_wsPing); _wsRetry++; setTimeout(()=>startMaximumFastServer(), Math.min(600+_wsRetry*300,2500)); };
+    _ws.onerror=()=>{ try{_ws.close();}catch(e){} };
+  }catch(e){}
+  try{ if(_es) _es.close(); _es=new EventSource(DB_URL+"?ns=zarora-f7526-default-rtdb"); _es.onmessage=(e)=>{ try{ if(!e.data||e.data==="null") return; let j=JSON.parse(e.data); let data=j.data!==undefined?j.data:j; if(data&&data.users) applyRemoteData(data,"stream"); }catch(err){} }; }catch(e){}
+  // Second WebSocket - double connection for heavy load (agar ek toot jaye, doosra pakde)
+  try{ if(_ws2) _ws2.close(); _ws2=new WebSocket("wss://zarora-f7526-default-rtdb.firebaseio.com/.ws?v=5&ns=zarora-f7526-default-rtdb"); _ws2.onopen=()=>{ try{ _ws2.send(JSON.stringify({t:"d",d:{r:999,a:"l",b:{p:"/zarorat",h:""}}})); }catch(e){} }; _ws2.onmessage=(ev)=>{ try{ let msg=JSON.parse(ev.data); if(msg.t==="c") return; let d=msg.d||{}; if(d.b&&d.b.d!==undefined&&d.b.d!==null&&d.b.d.users) applyRemoteData(d.b.d,"ws2"); }catch(e){} }; }catch(e){}
+}
+async function pushMaximumFast(){ try{ if(await vercelPush()) return; }catch(e){}  try{ if(_ws&&_ws.readyState===1){ _ws.send(JSON.stringify({t:"d",d:{r:_wsId++,a:"p",b:{p:"/zarorat",d:DB}}})); } }catch(e){} try{ if(_ws2&&_ws2.readyState===1){ _ws2.send(JSON.stringify({t:"d",d:{r:998,a:"p",b:{p:"/zarorat",d:DB}}})); } }catch(e){} pushToFirebase(true); }
+document.addEventListener('pointerdown',()=>{_lastInteraction=Date.now();},true); document.addEventListener('input',()=>{_lastInteraction=Date.now();},true);
+function isTyping(){ let a=document.activeElement; return a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.tagName==='SELECT'); }
+function safeRender(f){ if(!f&&(isTyping()||Date.now()-_lastInteraction<400)){ setTimeout(()=>safeRender(true),500); return; } let saved={}; document.querySelectorAll('input,textarea,select').forEach(el=>{ if(el.id) saved[el.id]=el.value; }); try{ render(); }catch(e){} try{ updateServerBar(); }catch(e){} Object.keys(saved).forEach(id=>{ let el=document.getElementById(id); if(el&&document.activeElement!==el) el.value=saved[id]; }); }
+function startLiveSync(){ try{ let bc=new BroadcastChannel("zarorat-live"); bc.onmessage=(e)=>{ if(e.data&&e.data.db){ let nj=JSON.stringify(e.data.db); if(nj!==_lastJSON){ DB=e.data.db; _lastJSON=nj; try{localStorage.setItem(DB_KEY,nj);}catch(err){} onRemoteChange&&onRemoteChange(); } } }; }catch(e){} window.addEventListener("storage",(e)=>{ if(e.key===DB_KEY&&e.newValue){ let nj=e.newValue; if(nj!==_lastJSON){ try{DB=JSON.parse(nj);}catch(err){} _lastJSON=nj; onRemoteChange&&onRemoteChange(); } } }); setInterval(()=>{ try{ let s=localStorage.getItem(DB_KEY); if(s&&s!==_lastJSON){ DB=JSON.parse(s); _lastJSON=s; onRemoteChange&&onRemoteChange(); } }catch(e){} },80); setInterval(()=>{ fastPull(); },180); setTimeout(()=>{ fastPull(); startMaximumFastServer(); startVercelStream(); },80); }
+let onRemoteChange=null;
+function toast(m){ let t=document.createElement("div"); t.className="toast"; t.textContent=m; document.body.appendChild(t); setTimeout(()=>t.remove(),2400); }
+function confetti(){ for(let i=0;i<32;i++){ let c=document.createElement("div"); c.style.cssText=`position:fixed;top:-10px;left:${Math.random()*100}vw;width:9px;height:13px;background:${["#00e676","#2dd4ff","#c8ff3d","#fff"][i%4]};z-index:200;border-radius:2px;animation:confetti ${1+Math.random()}s ease-in forwards`; document.body.appendChild(c); setTimeout(()=>c.remove(),2200); } }
+function uid(){ return Math.random().toString(36).slice(2,9)+Date.now().toString(36); }
+function esc(s){ return String(s||"").replace(/</g,"&lt;"); }
+function money(n){ return "Rs "+(n||0); }
+function log(t){ DB.activity.unshift({text:t,createdAt:new Date().toISOString()}); saveDB(); }
+function notify(u2,t,m){ DB.notifications.unshift({id:uid(),userId:u2,title:t,message:m,readBy:[],createdAt:new Date().toISOString()}); saveDB(); }
+document.addEventListener('click',(e)=>{ let b=e.target.closest('button'); if(!b) return; b.style.transform="scale(0.96)"; setTimeout(()=>{b.style.transform="";},150); },true);
+
+let key="",unlocked=false,tab="dashboard",svcFilter="All",ordFilter="All",depFilter="All",usrSearch="",tickFilter="All";
+function render(){ let a=document.getElementById("app"); if(!a) return; a.innerHTML = !unlocked ? lockHTML() : panelHTML(); updateServerBar(); }
+function lockHTML(){ return `<div class="wrap" style="padding-top:60px"><div class="serverbar" id="serverBar"><span class="live"></span> FULL HEAVY SERVER • CONNECTING</div><div class="glass" style="text-align:center;margin-top:14px"><div class="z" style="margin:0 auto">Z</div><h1 style="font-family:'Space Grotesk';font-size:32px;margin:16px 0 6px">Second Panel</h1><p class="muted">Premium Control • Full English • Full Heavy Server</p><label class="label">Access Key</label><input id="keyIn" type="password" class="input" placeholder="Enter access key"><p id="keyMsg" class="muted"></p><button type="button" class="btn" onclick="unlock()">Unlock Panel →</button><p class="muted" style="font-size:12px">Authorized access only.</p></div></div>`; }
+function unlock(){ let v=document.getElementById("keyIn").value.trim(); if(v==="ZARORAT-ADM-2026"){ unlocked=true; render(); toast("Welcome to Premium Control Panel!"); } else { document.getElementById("keyMsg").textContent="Incorrect key. Please try again."; } }
+function go(t){ tab=t; render(); }
+function panelHTML(){
+ let totalRev=DB.orders.filter(o=>o.status!=="Cancelled"&&o.status!=="Refunded").reduce((s,o)=>s+o.price,0);
+ let pendOrd=DB.orders.filter(o=>o.status==="Pending").length, pendDep=DB.deposits.filter(d=>d.status==="Pending").length, openTick=DB.tickets.filter(t=>t.status==="Open").length;
+ let cats=["All",...new Set([...DB.categories.map(c=>c.name),...DB.services.map(s=>s.category)])];
+ let body="";
+ if(tab==="dashboard"){
+  body+=`<div class="anim" style="background:linear-gradient(100deg,#00e676,#00c2a8,#2dd4ff);color:#03110a;border-radius:28px;padding:24px"><p style="font-size:11px;font-weight:800;letter-spacing:.18em">PREMIUM CONTROL • FULL HEAVY SERVER • REAL-TIME</p><h2 style="font-family:'Space Grotesk';font-size:30px;margin:8px 0">Total Revenue<br>${money(totalRev)}</h2><p style="font-weight:700">${DB.orders.length} orders • ${DB.users.length} users • ${DB.services.length} services</p></div>`;
+  body+=`<div class="stat mt"><div><span class="picon">₨</span><p class="muted" style="margin-top:10px">TOTAL REVENUE</p><p style="font-size:30px;font-weight:800">${money(totalRev)}</p></div><div><span class="picon blue">≡</span><p class="muted" style="margin-top:10px">TOTAL ORDERS</p><p style="font-size:30px;font-weight:800">${DB.orders.length}</p><p style="color:#ffd88a">${pendOrd} pending</p></div><div><span class="picon gold">●●</span><p class="muted" style="margin-top:10px">TOTAL USERS</p><p style="font-size:30px;font-weight:800">${DB.users.length}</p></div><div><span class="picon gold">◉</span><p class="muted" style="margin-top:10px">PENDING DEPOSITS</p><p style="font-size:30px;font-weight:800;color:#ffd88a">${pendDep}</p></div><div><span class="picon pink">◉</span><p class="muted" style="margin-top:10px">OPEN TICKETS</p><p style="font-size:30px;font-weight:800;color:#ff8a94">${openTick}</p></div><div><span class="picon">◈</span><p class="muted" style="margin-top:10px">LIVE SERVICES</p><p style="font-size:30px;font-weight:800">${DB.services.length}</p></div></div>`;
+  body+=`<div class="flex mt"><button type="button" class="btn2" style="flex:1" onclick="go('services')">＋ Add Service</button><button type="button" class="btn2" style="flex:1" onclick="go('orders')">≡ Orders (${pendOrd})</button><button type="button" class="btn2" style="flex:1" onclick="go('deposits')">₨ Deposits (${pendDep})</button></div>`;
+  body+=`<h3 class="mt"><span class="picon blue">▦</span> Recent Activity</h3>`+(DB.activity.slice(0,12).map(a=>`<div class="card" style="padding:14px"><p>${esc(a.text)}</p><p class="muted">${new Date(a.createdAt).toLocaleString()}</p></div>`).join("")||`<div class="card" style="text-align:center">No activity yet</div>`);
+ }
+ if(tab==="services"){
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon">◈</span> Services</h2><p class="muted">${DB.services.length} services • Full Heavy Server - Changes appear live instantly</p>`;
+  body+=`<div class="card"><h3><span class="picon">＋</span> Add New Service</h3><label class="label">Service Name</label><input id="sName" class="input" placeholder="e.g. Instagram Followers"><div class="flex"><div style="flex:1"><label class="label">Category</label><input id="sCat" class="input" placeholder="Instagram"></div><div style="flex:1"><label class="label">Price / 1000 (Rs)</label><input id="sPrice" type="number" class="input" placeholder="100"></div></div><div class="flex"><div style="flex:1"><label class="label">Min</label><input id="sMin" type="number" class="input" value="10"></div><div style="flex:1"><label class="label">Max</label><input id="sMax" type="number" class="input" value="10000"></div></div><label class="label">Description</label><textarea id="sDesc" class="input" rows="2" placeholder="Fast, high quality..."></textarea><button type="button" class="btn" style="margin-top:12px" onclick="addService()">Add Service - Live</button></div>`;
+  body+=`<div style="display:flex;gap:8px;overflow:auto">${cats.map(c=>`<button type="button" class="btn2" style="${svcFilter===c?'background:linear-gradient(100deg,#00e676,#00c2a8);color:#03110a':''};white-space:nowrap" onclick="setSvcFilter('${c}')">${c}</button>`).join("")}</div>`;
+  let list=DB.services.filter(s=>svcFilter==="All"||s.category===svcFilter);
+  body+= list.length?list.map(s=>`<div class="card"><div class="row"><div><span class="chip">${esc(s.category)}</span><p style="font-weight:800;margin:8px 0 2px">${esc(s.name)}</p><p class="muted">${money(s.pricePer1000)} / 1000 • Min ${s.min} - Max ${s.max}</p><p class="muted">${esc(s.description||"")}</p></div><div style="text-align:right"><span class="pill ${s.enabled!==false?"ok":"bad"}">${s.enabled!==false?"Live":"Paused"}</span></div></div><div class="flex mt"><button type="button" class="btn2" style="flex:1" onclick="toggleService('${s.id}')">${s.enabled!==false?"Pause":"Resume"}</button><button type="button" class="btn2" style="flex:1" onclick="editService('${s.id}')">Edit</button><button type="button" class="btn2" style="flex:1;color:#ff8a94" onclick="delService('${s.id}')">Delete</button></div><div id="edit-${s.id}"></div></div>`).join("") : `<div class="card" style="text-align:center"><h3>No services yet</h3><p class="muted">Add your first service above. It will appear live for users.</p></div>`;
+ }
+ if(tab==="orders"){
+  let list=DB.orders.filter(o=>ordFilter==="All"||o.status===ordFilter);
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon blue">≡</span> Orders</h2><p class="muted">${list.length} orders • ${money(totalRev)} total revenue</p><div style="display:flex;gap:8px;overflow:auto">${["All","Pending","Processing","Completed","Cancelled","Refunded"].map(s=>`<button type="button" class="btn2" style="${ordFilter===s?'background:linear-gradient(100deg,#00e676,#00c2a8);color:#03110a':''}" onclick="setOrdFilter('${s}')">${s}</button>`).join("")}</div>`;
+  body+= list.length?list.map(o=>`<div class="card"><div class="row"><div><b>${esc(o.serviceName)}</b><p class="muted">@${esc(o.username)} • Qty ${o.quantity} • ${money(o.price)}</p><p style="color:#7dc8ff;word-break:break-all">${esc(o.link)}</p><p class="muted">${new Date(o.createdAt).toLocaleString()}</p></div><span class="pill ${o.status==="Completed"?"ok":o.status==="Cancelled"||o.status==="Refunded"?"bad":"warn"}">${o.status}</span></div><div class="flex mt">${["Processing","Completed","Cancelled","Refunded"].map(st=>`<button type="button" class="btn2" style="flex:1" onclick="setOrder('${o.id}','${st}')">${st}</button>`).join("")}</div></div>`).join("") : `<div class="card" style="text-align:center">No orders yet</div>`;
+ }
+ if(tab==="deposits"){
+  let list=DB.deposits.filter(d=>depFilter==="All"||d.status===depFilter);
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon">₨</span> Deposits</h2><p class="muted">Easypaisa: 03493959558 — Mohammad Ajmal</p><div style="display:flex;gap:8px">${["All","Pending","Approved","Rejected"].map(s=>`<button type="button" class="btn2" onclick="setDepFilter('${s}')">${s}</button>`).join("")}</div>`;
+  body+= list.length?list.map(d=>`<div class="card"><div class="row"><div><b style="font-size:22px">${money(d.amount)}</b><p class="muted">@${esc(d.username)} • TID: <b style="color:#fff">${esc(d.tid)}</b></p><p class="muted">${esc(d.note||"")} • ${new Date(d.createdAt).toLocaleString()}</p></div><span class="pill ${d.status==="Approved"?"ok":d.status==="Rejected"?"bad":"warn"}">${d.status}</span></div>${d.status==="Pending"?`<div class="flex mt"><button type="button" class="btn" style="flex:1;padding:12px" onclick="approveDep('${d.id}')">Approve - Add Balance</button><button type="button" class="btn2" style="flex:1" onclick="rejectDep('${d.id}')">Reject</button></div>`:""}</div>`).join("") : `<div class="card" style="text-align:center">No deposits yet</div>`;
+ }
+ if(tab==="users"){
+  let list=DB.users.filter(u=>(u.name+" "+u.username+" "+u.email).toLowerCase().includes(usrSearch.toLowerCase()));
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon gold">●●</span> Users</h2><input class="input" placeholder="Search users..." value="${esc(usrSearch)}" oninput="usrSearch=this.value;render()">`;
+  body+= list.length?list.map(u=>{ let spent=DB.orders.filter(o=>o.userId===u.id).reduce((s,o)=>s+o.price,0); return `<div class="card"><div class="row"><div><b>${esc(u.name)} (@${esc(u.username)})</b><p class="muted">${esc(u.email)} • Balance ${money(u.balance)} • Spent ${money(spent)}</p><p class="muted">Referral: ${u.referralCode||"-"} • Joined ${new Date(u.createdAt).toLocaleDateString()}</p></div><span class="pill ${u.status==="Blocked"?"bad":"ok"}">${u.status||"Active"}</span></div><div class="flex mt"><button type="button" class="btn2" style="flex:1" onclick="adjustBalance('${u.id}')">Adjust Balance</button><button type="button" class="btn2" style="flex:1" onclick="toggleUser('${u.id}')">${u.status==="Blocked"?"Unblock":"Block"}</button><button type="button" class="btn2" style="flex:1;color:#ff8a94" onclick="delUser('${u.id}')">Delete</button></div><div id="bal-${u.id}"></div></div>`; }).join("") : `<div class="card" style="text-align:center">No users yet</div>`;
+ }
+ if(tab==="tickets"){
+  let list=DB.tickets.filter(t=>tickFilter==="All"||t.status===tickFilter);
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon blue">◉</span> Tickets</h2><div style="display:flex;gap:8px">${["All","Open","Closed"].map(s=>`<button type="button" class="btn2" onclick="setTickFilter('${s}')">${s}</button>`).join("")}</div>`;
+  body+= list.length?list.map(t=>`<div class="card"><div class="row"><div><b>${esc(t.subject)}</b><p class="muted">@${esc(t.username)} • ${new Date(t.createdAt).toLocaleString()}</p><p>${esc(t.message)}</p></div><span class="pill warn">${t.status}</span></div>${(t.replies||[]).map(r=>`<div class="card" style="background:#08110e"><b>${r.sender==="support"?"SUPPORT":"USER"}</b> • ${new Date(r.at).toLocaleString()}<p>${esc(r.text)}</p></div>`).join("")}<div class="flex mt"><input id="ar-${t.id}" class="input" style="margin:0" placeholder="Write reply..."><button type="button" class="btn2" onclick="adminReply('${t.id}')">Send Reply</button></div><div class="flex mt"><button type="button" class="btn2" onclick="setTicket('${t.id}','Closed')">Close Ticket</button><button type="button" class="btn2" onclick="setTicket('${t.id}','Open')">Reopen</button></div></div>`).join("") : `<div class="card" style="text-align:center">No tickets yet</div>`;
+ }
+ if(tab==="coupons"){
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon gold">◈</span> Coupons</h2><div class="card"><label class="label">Coupon Code</label><input id="cCode" class="input" placeholder="e.g. SAVE10"><label class="label">Discount %</label><input id="cDisc" type="number" class="input" placeholder="10"><button type="button" class="btn" style="margin-top:12px" onclick="addCoupon()">Add Coupon</button></div>`;
+  body+= DB.coupons.length?DB.coupons.map(c=>`<div class="card"><div class="row"><b>${esc(c.code)} — ${c.discountPercent}% OFF</b><span class="pill ${c.active?"ok":"bad"}">${c.active?"Active":"Inactive"}</span></div><div class="flex mt"><button type="button" class="btn2" onclick="toggleCoupon('${c.id}')">${c.active?"Deactivate":"Activate"}</button><button type="button" class="btn2" style="color:#ff8a94" onclick="delCoupon('${c.id}')">Delete</button></div></div>`).join("") : `<div class="card" style="text-align:center">No coupons yet</div>`;
+ }
+ if(tab==="announcements"){
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon">◉</span> Announcements</h2><div class="card"><label class="label">Title</label><input id="aTitle" class="input" placeholder="e.g. New services added"><label class="label">Message</label><textarea id="aMsg" class="input" rows="3" placeholder="Write announcement..."></textarea><button type="button" class="btn" style="margin-top:12px" onclick="addAnn()">Publish Announcement</button></div>`;
+  body+= DB.announcements.length?DB.announcements.map(a=>`<div class="card"><b>${esc(a.title)}</b><p>${esc(a.message)}</p><div class="flex mt"><button type="button" class="btn2" onclick="toggleAnn('${a.id}')">${a.enabled?"Hide":"Show"}</button><button type="button" class="btn2" style="color:#ff8a94" onclick="delAnn('${a.id}')">Delete</button></div></div>`).join("") : `<div class="card" style="text-align:center">No announcements yet</div>`;
+ }
+ if(tab==="notify"){
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon gold">◎</span> Send Notification</h2><div class="card"><label class="label">Title</label><input id="nTitle" class="input" placeholder="e.g. New Offer"><label class="label">Message</label><textarea id="nMsg" class="input" rows="3" placeholder="Write message..."></textarea><button type="button" class="btn" style="margin-top:12px" onclick="sendNotif()">Send to All Users</button></div>`;
+ }
+ if(tab==="settings"){
+  body+=`<h2 style="font-family:'Space Grotesk'"><span class="picon dark">⚙</span> Settings</h2><div class="card"><label class="label">Panel Name</label><input id="setName" class="input" value="${esc(DB.settings.panelName)}"><label class="label">Minimum Deposit (Rs)</label><input id="setMin" type="number" class="input" value="${DB.settings.minDeposit}"><label class="label">Referral Bonus %</label><input id="setRef" type="number" class="input" value="${DB.settings.referralBonus}"><label class="label">Support Message</label><textarea id="setSup" class="input" rows="2">${esc(DB.settings.supportMessage)}</textarea><button type="button" class="btn" style="margin-top:12px" onclick="saveSettings()">Save Settings - Live</button></div><div class="card"><h3><span class="picon">₨</span> Deposit Account</h3><p><b>Easypaisa:</b> 03493959558</p><p><b>Name:</b> Mohammad Ajmal</p><p class="muted">Shown to users on Deposit page.</p></div>`;
+ }
+ return `<div class="wrap-wide"><div class="serverbar" id="serverBar"><span class="live"></span> FULL HEAVY SERVER • CONNECTED</div><div class="sticky" style="margin-top:12px"><div class="row"><div class="logo"><div class="z">Z</div><div><b style="font-family:'Space Grotesk'">ZARORAT <span class="green">PREMIUM CONTROL</span></b><div class="muted"><span class="live"></span> Full Heavy Server • Live</div></div></div><button type="button" class="btn2" onclick="location.reload()">↻ Refresh</button></div><div style="display:flex;gap:8px;overflow:auto;margin-top:12px">${[["dashboard","▦","Dashboard"],["services","◈","Services"],["orders","≡","Orders"],["deposits","₨","Deposits"],["users","●●","Users"],["tickets","◉","Tickets"],["coupons","◈","Coupons"],["announcements","◉","Announcements"],["notify","◎","Notify"],["settings","⚙","Settings"]].map(x=>`<button type="button" class="btn2" style="${tab===x[0]?'background:linear-gradient(100deg,#00e676,#00c2a8);color:#03110a':''};white-space:nowrap" onclick="go('${x[0]}')"><span class="picon" style="width:20px;height:20px;font-size:11px">${x[1]}</span> ${x[2]}</button>`).join("")}</div></div>${body}</div>`;
+}
+function setSvcFilter(c){ svcFilter=c; render(); }
+function setOrdFilter(c){ ordFilter=c; render(); }
+function setDepFilter(c){ depFilter=c; render(); }
+function setTickFilter(c){ tickFilter=c; render(); }
+function addService(){ let n=document.getElementById("sName").value.trim(),cat=document.getElementById("sCat").value.trim()||"Other",pr=Number(document.getElementById("sPrice").value),mn=Number(document.getElementById("sMin").value)||10,mx=Number(document.getElementById("sMax").value)||10000,desc=document.getElementById("sDesc").value.trim(); if(!n||!pr){ toast("Enter service name and price."); return; } DB.services.unshift({id:uid(),name:n,category:cat,pricePer1000:pr,min:mn,max:mx,description:desc,enabled:true,createdAt:new Date().toISOString()}); saveDB(); log("Service added: "+n); confetti(); toast("Service is now live!"); render(); }
+function toggleService(id){ let s=DB.services.find(x=>x.id===id); s.enabled = s.enabled===false ? true : false; saveDB(); render(); }
+function editService(id){ let s=DB.services.find(x=>x.id===id); let el=document.getElementById("edit-"+id); el.innerHTML=`<div class="card" style="margin-top:10px"><label class="label">Price / 1000</label><input id="ep-${id}" type="number" class="input" value="${s.pricePer1000}"><label class="label">Min</label><input id="emn-${id}" type="number" class="input" value="${s.min}"><label class="label">Max</label><input id="emx-${id}" type="number" class="input" value="${s.max}"><button type="button" class="btn" style="margin-top:10px" onclick="saveEdit('${id}')">Save Changes</button></div>`; }
+function saveEdit(id){ let s=DB.services.find(x=>x.id===id); s.pricePer1000=Number(document.getElementById("ep-"+id).value); s.min=Number(document.getElementById("emn-"+id).value); s.max=Number(document.getElementById("emx-"+id).value); saveDB(); toast("Service updated!"); render(); }
+function delService(id){ if(!confirm("Delete this service?")) return; DB.services=DB.services.filter(x=>x.id!==id); saveDB(); render(); }
+function setOrder(id,st){ let o=DB.orders.find(x=>x.id===id); o.status=st; if(st==="Refunded"){ let u=DB.users.find(x=>x.id===o.userId); if(u){ u.balance+=o.price; } } saveDB(); log(`Order marked as ${st}: ${o.serviceName}`); toast(`Order → ${st}`); render(); }
+function approveDep(id){ let d=DB.deposits.find(x=>x.id===id); d.status="Approved"; let u=DB.users.find(x=>x.id===d.userId); if(u){ u.balance+=d.amount; DB.transactions.unshift({id:uid(),userId:u.id,username:u.username,type:"Deposit",title:"Deposit - Easypaisa",amount:d.amount,status:"Paid",createdAt:new Date().toISOString()}); } saveDB(); log(`Deposit approved: ${money(d.amount)} for @${d.username}`); confetti(); toast("Deposit approved - balance updated live!"); render(); }
+function rejectDep(id){ let d=DB.deposits.find(x=>x.id===id); d.status="Rejected"; saveDB(); render(); }
+function adjustBalance(id){ let el=document.getElementById("bal-"+id); el.innerHTML=`<div class="flex mt"><input id="balv-${id}" type="number" class="input" style="margin:0" placeholder="e.g. 500"><button type="button" class="btn2" onclick="doAdjust('${id}')">Add Balance</button></div>`; }
+function doAdjust(id){ let v=Number(document.getElementById("balv-"+id).value); if(!v){ toast("Enter amount."); return; } let u=DB.users.find(x=>x.id===id); u.balance+=v; DB.transactions.unshift({id:uid(),userId:u.id,username:u.username,type:"Adjustment",title:"Balance adjustment",amount:v,status:"Paid",createdAt:new Date().toISOString()}); saveDB(); toast("Balance updated!"); render(); }
+function toggleUser(id){ let u=DB.users.find(x=>x.id===id); u.status = u.status==="Blocked" ? "Active" : "Blocked"; saveDB(); render(); }
+function delUser(id){ if(!confirm("Delete this user?")) return; DB.users=DB.users.filter(x=>x.id!==id); saveDB(); render(); }
+function adminReply(id){ let v=document.getElementById("ar-"+id).value.trim(); if(!v) return; let t=DB.tickets.find(x=>x.id===id); t.replies.push({sender:"support",text:v,at:new Date().toISOString()}); t.status="Open"; saveDB(); toast("Reply sent live!"); render(); }
+function setTicket(id,st){ let t=DB.tickets.find(x=>x.id===id); t.status=st; saveDB(); render(); }
+function addCoupon(){ let code=document.getElementById("cCode").value.trim().toUpperCase(),disc=Number(document.getElementById("cDisc").value); if(!code||!disc){ toast("Enter code and discount."); return; } DB.coupons.unshift({id:uid(),code,discountPercent:disc,active:true,createdAt:new Date().toISOString()}); saveDB(); toast("Coupon added!"); render(); }
+function toggleCoupon(id){ let c=DB.coupons.find(x=>x.id===id); c.active=!c.active; saveDB(); render(); }
+function delCoupon(id){ DB.coupons=DB.coupons.filter(x=>x.id!==id); saveDB(); render(); }
+function addAnn(){ let t=document.getElementById("aTitle").value.trim(),m=document.getElementById("aMsg").value.trim(); if(!t||!m){ toast("Enter title and message."); return; } DB.announcements.unshift({id:uid(),title:t,message:m,enabled:true,createdAt:new Date().toISOString()}); saveDB(); toast("Announcement published!"); render(); }
+function toggleAnn(id){ let a=DB.announcements.find(x=>x.id===id); a.enabled=!a.enabled; saveDB(); render(); }
+function delAnn(id){ DB.announcements=DB.announcements.filter(x=>x.id!==id); saveDB(); render(); }
+function sendNotif(){ let t=document.getElementById("nTitle").value.trim(),m=document.getElementById("nMsg").value.trim(); if(!t||!m){ toast("Enter title and message."); return; } notify("all",t,m); toast("Notification sent live!"); render(); }
+function saveSettings(){ DB.settings.panelName=document.getElementById("setName").value.trim()||"ZARORAT"; DB.settings.minDeposit=Number(document.getElementById("setMin").value)||50; DB.settings.referralBonus=Number(document.getElementById("setRef").value)||5; DB.settings.supportMessage=document.getElementById("setSup").value.trim(); saveDB(); toast("Settings saved live!"); render(); }
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) fastPull(); });
+window.addEventListener('focus',()=>{ fastPull(); });
+onRemoteChange=()=>{ safeRender(); };
+loadDB(); _lastJSON=JSON.stringify(DB); render(); startLiveSync(); startMaximumFastServer();
+window.unlock=unlock; window.go=go; window.setSvcFilter=setSvcFilter; window.setOrdFilter=setOrdFilter; window.setDepFilter=setDepFilter; window.setTickFilter=setTickFilter; window.addService=addService; window.toggleService=toggleService; window.editService=editService; window.saveEdit=saveEdit; window.delService=delService; window.setOrder=setOrder; window.approveDep=approveDep; window.rejectDep=rejectDep; window.adjustBalance=adjustBalance; window.doAdjust=doAdjust; window.toggleUser=toggleUser; window.delUser=delUser; window.adminReply=adminReply; window.setTicket=setTicket; window.addCoupon=addCoupon; window.toggleCoupon=toggleCoupon; window.delCoupon=delCoupon; window.addAnn=addAnn; window.toggleAnn=toggleAnn; window.delAnn=delAnn; window.sendNotif=sendNotif; window.saveSettings=saveSettings;
+</script></body></html>
